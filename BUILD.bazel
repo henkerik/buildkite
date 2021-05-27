@@ -1,0 +1,9 @@
+load("@npm//@bazel/typescript:index.bzl", "ts_project")
+
+ts_project(
+    extends = "//:tsconfig.json",
+    srcs = glob(include = ["src/**/*.ts", "src/**/*.tsx"], exclude = ["src/**/*.test.ts", "src/**/*.test.tsx"]),
+    deps = [
+
+    ]
+)

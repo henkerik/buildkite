@@ -1,0 +1,11 @@
+{
+  "name": "buildkite",
+  "version": "1.0.0",
+  "dependencies": {
+    "@bazel/typescript": "3.5.1",
+    "typescript": "4.3.2"
+  },
+  "scripts": {
+    "build": "bazel build //..."
+  }
+}

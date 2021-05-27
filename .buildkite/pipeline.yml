@@ -1,3 +1,7 @@
 steps:
-  - label: "Example Test"
-    command: echo "Hello!"
+  - label: "Install"
+    commands:
+      - yarn install
+  - label: ":bazel: Build"
+    commands:
+      - bazel build //...
